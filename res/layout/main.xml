@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layMainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <WebView
+        android:id="@+id/mainWebView"
+        android:layout_width="fill_parent"
+        android:layout_weight="1" >
+    </WebView>
+    <!--
+	<GridView android:id="@+id/GridView_toolbar"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true">
+	</GridView>
+    -->
+
+    <GridView
+        android:id="@+id/GridView_toolbar"
+        android:layout_width="fill_parent"
+		android:layout_weight="0.1"   
+		android:layout_alignParentBottom="true" >
+    </GridView>
+
+</LinearLayout>
